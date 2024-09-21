@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{font-family: "Poppins", sans-serif; margin: 0; padding: 0; box-sizing: border-box;}
+
+body{overflow-x: hidden;}
+
+header{box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);}
+
+nav a, a span{ transition: all 0.15s ease-in-out;}
+
+nav a.active::before{
+    content: '';
+    position: absolute;
+    left: 4px; bottom: -1px;
+    width: 55%;
+    height: 2px; 
+    background: #088178;
+    transition: width 0.15s ease-in-out;
+}
+/* 
+_______________________________________________
+///////////////////////////////////////////////
+              landing page
+_______________________________________________    
+*/
+.hero{
+    background-image: url(../media/hero.webp);
+    background-size: cover;
+}
+.hero-button{
+    background-image: url(../media/button.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.card{
+    box-shadow: 20px 20px 34px rgba(0, 0, 0,0.03); 
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover{
+    box-shadow: 10px 10px 36px rgba(0, 0, 0,0.1);
+}
+
+.product{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0,0.02);
+    transition: all 0.3s ease-in-out;
+}
+.product:hover{
+    box-shadow: 10px 10px 36px rgba(0, 0, 0,0.13);
+}
+ 
+.banner-first{
+    background: url(../media/banner/b1.webp);
+}
+
+.nav-sticky{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.top-link{
+    visibility: hidden;
+    z-index: -99;
+}
+
+.show-top-link{
+    visibility: visible;
+    z-index: 99;
+}
+
+.banner-1{
+    background: url(../media/banner/b2.webp);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.banner-2{
+    background: url(../media/banner/b3.webp);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.banner-3{
+    background: url(../media/banner/b4.webp);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.banner-4{
+    background: url(../media/banner/b5.webp);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.banner-5{
+    background: url(../media/banner/b18.webp);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+#newsletter{
+    background-image: url(../media/banner/b14-min.png);
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+    flex-wrap: wrap;
+}
+/* 
+_______________________________________________
+///////////////////////////////////////////////
+              shop page
+_______________________________________________    
+*/
+.shop-banner{
+    background-image: url(../media/banner/b110.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.filter-btn.active {
+    background-color: #088178;
+    color: white;
+    transform: scale(0.95);
+}
+/* 
+_______________________________________________
+///////////////////////////////////////////////
+              shop page
+_______________________________________________    
+*/
+.about-banner{
+    background-image: url(../media/about/a-banner.webp);
+    background-size: cover;
+    background-position: center;
+}

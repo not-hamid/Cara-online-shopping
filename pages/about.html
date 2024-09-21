@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="shortcut icon" href="../assets/media/logo.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>About- Cara</title>
+</head>
+<body class="text-[#222]">
+    <header class="flex items-center justify-between px-[6%] py-3 lg:py-6  bg-[#E3E6F3] w-full" id="header">
+        <img src="../assets/media/logo.png" alt="logo">
+      
+        <button id="menu-icon" class="lg:hidden text-3xl mt-3 text-[#088178] cursor-pointer">
+          <i class='bx bx-menu'></i>
+        </button>
+      
+        <div id="sidebar" class="fixed top-0 left-0 px-[6%] py-3 w-full h-full bg-[#E3E6F3] transform -translate-x-full transition-transform lg:transform-none lg:relative lg:flex lg:items-center lg:gap-6">
+          <button id="close-icon" class="absolute top-5 right-[6%] text-4xl text-[#088178] lg:hidden">
+            <i class='bx bx-x'></i>
+          </button>
+          
+          <div class="nav-container flex flex-col lg:flex-row lg:items-center lg:gap-2 lg:absolute lg:right-0">
+            <img src="../assets/media/logo.png" class="w-24 lg:hidden py-2" alt="logo">
+            <nav class="flex flex-col lg:flex-row gap-6 lg:gap-6 pt-10 pb-7 lg:pt-0 lg:pb-0">
+              <a class="hover:text-[#088178] p-1 relative lg:nav-underline" href="../index.html">Home</a>
+              <a class="p-1 relative nav-underline hover:text-[#088178]" href="shop.html">Shop</a>
+              <a class="p-1 relative lg:nav-underline active text-[#088178]  hover:cursor-default">About</a> 
+              <a class="p-1 relative lg:nav-underline hover:text-[#088178]" href="contact.html">Contact</a>
+              <a class="p-1 relative lg:nav-underline hover:text-[#088178]" href="blog.html">Blog</a>
+            </nav>
+
+            <a href="#" class="text-2xl lg:ml-6 lg:inline">
+              <span class="font-medium pr-2 inline lg:hidden">Cart</span><i class='bx bx-shopping-bag transition-colors text-[#088178] hover:text-black'></i>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <div class="about-banner py-28 text-white font-extralight text-sm relative">
+          <div class="text-center">
+            <h1 class="font-semibold text-5xl">#KnowUs</h1>
+            <p class="font-light mt-3">Lorem ipsum dolor sit amet consectetur</p>
+          </div>
+        </div>
+
+        <section id="newsletter" class="py-12 px-[6%] flex flex-col text-center lg:text-start lg:flex-row justify-between items-center flex-wrap">
+          <div class="newstext">
+            <h1 class="font-semibold text-white text-2xl">Sign Up for Newsletters</h1>
+            <p class="font-medium text-[#818ea0] text-[0.9rem]">Get E-mail updates about our latest shop and <span class="text-[#ffbd27]">special offers.</span></p>
+          </div>
+          <form class="inputs flex w-[90%] sm:w-[60%] lg:w-[40%] mt-6 lg:mt-0">
+            <input type="email" name="E-mail" spellcheck="false" placeholder="Your e-mail address" class="py-3 w-full rounded-s px-[1.25em] outline-0 text-sm sm:text-md">
+            <button class="bg-[#088178] hover:bg-[#0a9a8a] transition-colors text-white py-3 px-4 rounded-e whitespace-nowrap text-sm sm:text-md">Sign Up</button>
+          </form>
+        </section>
+      </main>
+
+      <footer class="px-[6%] mt-16 font-light text-sm md:text-[0.7rem] lg:text-sm">
+        <div class="footer-container w-full flex flex-col md:flex-row justify-between md:gap-4 lg:gap-0">
+   
+         <div class="col">
+           <img src="../assets/media/logo.png">
+           <h4 class="pt-7 pb-3 font-semibold text-lg md:text-md">Contact</h4>
+           <p><strong>Address: </strong>Gulberg Lahore, Pakistan</p>
+           <p class="my-1"><strong>Phone: </strong>03027566487 / (+92) 3027566487</p>
+           <p><strong>Hours: </strong>10:00 - 18:00, Mon - Sat</p>
+           <div class="follow">
+             <h4 class="pt-7 pb-3 font-semibold text-md">Follow Us</h4>
+             <div class="icon text-xl mr-3 cursor-default">
+               <a href="#"><i class='bx bxl-instagram hover:text-[#088178] transition-colors'></i></a>
+               <a href="#"><i class='bx bxl-facebook hover:text-[#088178] transition-colors'></i></a>
+               <a href="#"><i class='bx bxl-pinterest-alt hover:text-[#088178] transition-colors'></i></a>
+               <a href="#"><i class='bx bxl-youtube hover:text-[#088178] transition-colors'></i></a>
+             </div>
+           </div>
+         </div>
+   
+         <div class="col flex flex-col gap-3">
+           <h4 class="font-semibold mt-10 md:mt-0 text-lg md:text-md">About</h4>
+           <a href="#" class="hover:text-[#088178] hover:underline">About Us</a>
+           <a href="#" class="hover:text-[#088178] hover:underline">Delivery Information</a>
+           <a href="#" class="hover:text-[#088178] hover:underline">Privacy Policy</a>
+           <a href="#" class="hover:text-[#088178] hover:underline">Terms & Conditions</a>
+           <a href="#" class="hover:text-[#088178] hover:underline">Contact Us</a>
+         </div>
+   
+         <div class="col flex flex-col gap-3">
+           <h4 class="font-semibold text-lg md:text-md mt-10 md:mt-0">My Account</h4>
+           <a href="#" class="hover:text-[#088178] hover:underline">Sign In</a>
+           <a href="#" class="hover:text-[#088178] hover:underline">View Cart</a>
+           <a href="#" class="hover:text-[#088178] hover:underline">My Wishlist</a>
+           <a href="#" class="hover:text-[#088178] hover:underline">Track My Order</a>
+           <a href="#" class="hover:text-[#088178] hover:underline">Help</a>
+         </div>
+   
+         <div class="col flex flex-col gap-3">
+           <h4 class="font-semibold text-lg md:text-md mt-10 md:mt-0">Install App</h4>
+           <p>From App Store or Google Play</p>
+           <div class="row flex gap-2 sm:gap-0 md:gap-2 w-full">
+             <a href="#" class="w-full"><img src="../assets/media/pay/app.jpg" class="border-[1px] border-[#088178] rounded"></a>
+             <a href="#" class="w-full"><img src="../assets/media/pay/play.jpg" class="border-[1px] border-[#088178] rounded"></a>
+           </div>
+           <p>Secured Payment Gateways</p>
+           <img src="../assets/media/pay/pay.png" class="w-[70%]">
+         </div>
+        </div>
+   
+         <p class="text-center py-3 mt-10 md:mt-0">
+           <a href="https://dev-hamid-portfolio.netlify.app/" class=" hover:text-[#088178] text-xs sm:text-md hover:font-medium" target="_blank">&copy;  Copyright <span id="dateUpdate">2024</span> HAMID HUSSAIN</a>
+         </p>
+       </footer>
+       <script src="../assets/js/script.js"></script>
+   </body>
+   </html>
